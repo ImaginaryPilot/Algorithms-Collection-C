@@ -7,8 +7,8 @@ int main(int argc, char *argv[]){
     int max = 0;
     scanf("%d", &n);
 
-    int *arr = malloc(n*sizeof(int));
-    int *out = malloc(n*sizeof(int));
+    int *arr = (int*)malloc(n*sizeof(int));
+    int *out = (int*)malloc(n*sizeof(int));
 
     for(int i = 0; i < n; i++){
         scanf("%d", &arr[i]);
@@ -30,8 +30,9 @@ int main(int argc, char *argv[]){
         tmp[arr[i]]--;
     }
 
-    for(int i = 0; i < n; i++)
+    for(int i = 0; i < n; i++){
         printf("%d ", out[i]);
+    }
     printf("\n");
 
     free(arr);
