@@ -13,9 +13,8 @@ int main(int argc, char *argv[]) {
 
     int *arr = malloc(n*sizeof(int));
 
-    for(int i = 0; i < n; i++){
+    for(int i = 0; i < n; i++)
         scanf("%d", &arr[i]);
-    }
 
     for(int i = 0; i < n - 1; i++){
         int key = i;
@@ -29,9 +28,8 @@ int main(int argc, char *argv[]) {
             swap(&arr[key], &arr[i]);
     }
 
-    for(int i = 0; i < n; i++){
+    for(int i = 0; i < n; i++)
         printf("%d ", arr[i]);
-    }
     printf("\n");
 
     free(arr);
