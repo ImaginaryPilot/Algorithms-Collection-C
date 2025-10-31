@@ -1,7 +1,6 @@
 # Max Sub Array
 
-Merge sort is a Divide and Conquer sorting algorithm. It sorts by recursively splitting the array into 2 parts and mergeing back to to get a fully sorted array
-
+Given an array of integers, we must find a subarray (containing at least 1 element) which has the maximum possible sum in the entire array. 
 
 ### Dependencies
 
